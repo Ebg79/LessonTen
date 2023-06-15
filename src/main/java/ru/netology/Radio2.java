@@ -4,10 +4,17 @@ public class Radio2 {
     private int currentStation;
     private int minStation = 0;
     private int maxStation = 9;
+    private int quantityStation = 10;
     private int currentVolume;
     private int minVolume = 0;
-    private int maxVolume = 10;
+    private int maxVolume = 100;
 
+    public Radio2() {
+    }
+
+    public Radio2(int quantityStation) {
+        this.quantityStation = quantityStation;
+    }
 
     public int getCurrentStation() {
         return currentStation;
@@ -51,13 +58,13 @@ public class Radio2 {
         if (currentVolume < maxVolume) {
             currentVolume++;
         }
+        this.currentVolume = currentVolume;
     }
 
     public void decreaseVolume() {
-        if (currentVolume > 0) {
+        if (currentVolume > minVolume) {
             currentVolume--;
         }
     }
-
 }
 
