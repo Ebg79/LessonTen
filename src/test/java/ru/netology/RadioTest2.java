@@ -4,7 +4,7 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class Radioman2Test {
+class RadioTest2 {
     Radio2 radio = new Radio2(10);
     Radio2 radio2 = new Radio2();
 
